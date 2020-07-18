@@ -1,0 +1,48 @@
+.crypto-list{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.main-crypto-list{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.main-crypto-list li{
+    border: 1px solid lightslategrey;
+    margin-top: 1px;
+    line-height: 2;
+    padding: 5px 20px;
+}
+.main-crypto-list li span{
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.crypto-symbol::before{
+    content: "[";
+}
+.crypto-symbol::after{
+    content: "]";
+}
+
+
+.red{
+    color: red;
+}
+.red::after{
+    content: "\2193";
+}
+.green{
+    color: green;
+}
+.green::after{
+    content: "\2191";
+}
+.blue{
+    color: blue;
+}
+.blue::after{
+    content: "\2192";
+}
